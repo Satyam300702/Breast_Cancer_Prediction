@@ -6,4 +6,3 @@ seaborn
 xgboost
 catboost
 lightgbm
-scikitlearn
