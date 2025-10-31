@@ -18,7 +18,7 @@ except FileNotFoundError:
     st.stop()
     
 def Breast_cancer(input_data):
-    input_data_as_numpy_array(input_data).reshape(1,-1)
+    input_data_as_numpy_array = np.asarray(input_data).reshape(1,-1)
     prediction = breast_cancer.predict(input_data_as_numpy_array)
     if prediction[0] == 0:
         return "The tumor is Malignant (Cancerous)"
